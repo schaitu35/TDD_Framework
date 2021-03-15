@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import reports.ExtentLogger;
@@ -33,6 +34,11 @@ public class PageActionUtils {
 
     public static String getElementText(By element){
         return getElement(element).getText();
+    }
+
+    public static void moveToElement(By element){
+        Actions actions = new Actions(DriverManager.getDriver());
+        actions.moveToElement(getElement(element)).build().perform();
     }
 
 
