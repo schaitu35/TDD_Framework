@@ -1,6 +1,6 @@
-package com.facebook.tests;
+package com.framework.tests;
 
-import com.facebook.base.TestBase;
+import com.framework.base.TestBase;
 import org.testng.annotations.Test;
 
 public class HomePageTest extends TestBase {

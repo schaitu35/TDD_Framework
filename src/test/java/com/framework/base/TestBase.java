@@ -1,6 +1,6 @@
-package com.facebook.base;
+package com.framework.base;
 
-import com.facebook.constants.AppConstants;
+import com.framework.constants.AppConstants;
 import driverFactory.DriverManager;
 import driverFactory.Drivers;
 import org.testng.annotations.AfterMethod;
